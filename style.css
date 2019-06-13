@@ -540,9 +540,10 @@ section {
 #sectionwrapperstilart {
     display: flex;
     flex-wrap: wrap;
-    background-color: aliceblue;
+    background-color: white;
     flex-direction: column;
     margin-top: 100px;
+
 }
 
 #sectionwrapperstilart .flexwrapperbund {
@@ -586,7 +587,7 @@ section {
     flex-basis: 200px;
     background-color: darkslategray;
     margin: 20px 20px 20px 20px;
-    ;
+
 }
 
 #sectionwrapperstilart .flexitembot {
@@ -616,6 +617,159 @@ section {
     background-repeat: no-repeat;
     background-size: 100%;
     background-color: white;
+}
+
+@media screen and (max-width: 1000px) {
+    section {
+        max-width: 800px;
+        margin: 20px;
+
+    }
+
+    #sectionwrapperstilart .flexwrapperbund {
+        flex-direction: column;
+    }
+
+    #sectionwrapperstilart .flexitemtop {
+        flex-basis: 350px;
+
+    }
+
+    #sectionwrapperstilart .flexitemmid {
+        flex-basis: 350px;
+    }
+
+    #sectionwrapperstilart .flexitembot {
+        flex-basis: 350px;
+    }
+}
+
+
+@media only screen and (max-width: 730px) and (min-width: 570px) {
+    section {
+        max-width: 800px;
+    }
+
+    #sectionwrapperstilart .flexwrapperbund {
+        flex-direction: column;
+    }
+
+    #sectionwrapperstilart .flexitemtop {
+        flex-basis: 300px;
+
+    }
+
+    #sectionwrapperstilart .flexitemmid {
+        flex-basis: 300px;
+
+    }
+
+    #sectionwrapperstilart .flexitembot {
+        flex-basis: 300px;
+
+    }
+}
+
+@media screen and (max-width: 570px) {
+    section {
+        max-width: 800px;
+    }
+
+    #sectionwrapperstilart .flexwrapperbund {
+        flex-direction: column;
+
+
+    }
+
+    #sectionwrapperstilart .flexitemtop {
+        flex-basis: 270px;
+        margin: 0;
+    }
+
+    #sectionwrapperstilart .flexitemmid {
+        flex-basis: 270px;
+        margin: 0;
+    }
+
+    #sectionwrapperstilart .flexitembot {
+        flex-basis: 270px;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    section {
+        max-width: 800px;
+    }
+
+    #sectionwrapperstilart .flexwrapperbund {
+        flex-direction: column;
+    }
+
+    #sectionwrapperstilart .flexitemtop {
+        flex-basis: 200px;
+        margin: 0;
+    }
+
+    #sectionwrapperstilart .flexitemmid {
+        flex-basis: 200px;
+        margin: 0;
+    }
+
+    #sectionwrapperstilart .flexitembot {
+        flex-basis: 200px;
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width: 350px) and (min-width: 280px) {
+    section {
+        max-width: 800px;
+    }
+
+    #sectionwrapperstilart .flexwrapperbund {
+        flex-direction: column;
+    }
+
+    #sectionwrapperstilart .flexitemtop {
+        flex-basis: 100px;
+        margin: 5px;
+    }
+
+    #sectionwrapperstilart .flexitemmid {
+        flex-basis: 100px;
+        margin: 5px;
+    }
+
+    #sectionwrapperstilart .flexitembot {
+        flex-basis: 100px;
+        margin: 5px;
+    }
+}
+@media only screen and (max-width: 280px) and (min-width: 0px) {
+    section {
+        max-width: 800px;
+        margin: 0;
+    }
+
+    #sectionwrapperstilart .flexwrapperbund {
+        flex-direction: column;
+    }
+
+    #sectionwrapperstilart .flexitemtop {
+        flex-basis: 120px;
+
+    }
+
+    #sectionwrapperstilart .flexitemmid {
+        flex-basis: 120px;
+
+    }
+
+    #sectionwrapperstilart .flexitembot {
+        flex-basis: 120px;
+
+    }
 }
 
 /*---------------------------------------------------------Stilart SIDE Slut----------------------------------------------*/
