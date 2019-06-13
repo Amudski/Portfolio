@@ -50,6 +50,18 @@ p2 {
     line-height: 1.3em;
 }
 
+p3 {
+    font-family: 'PT Serif', serif;
+    font-size: 1.3em;
+    line-height: 1.3em;
+}
+
+/*Footer tekst*/
+p4 {
+    font-family: 'PT Serif', serif;
+    font-size: 1em;
+    line-height: 1.3em;
+}
 
 h1 {
     font-family: 'century_gothicregular';
@@ -71,27 +83,38 @@ h3 {
     font-size: 1.5em;
 }
 
-p3 {
-    font-family: 'PT Serif', serif;
-    font-size: 1.3em;
-    line-height: 1.3em;
+h4 {
+    font-family: 'century_gothicregular';
+    font-size: 1em;
 }
 
 h2:before {
     content: '';
 }
 
-/*
 footer {
     text-align: center;
-    background-color:antiquewhite;
-
-  left: 0;
-  bottom: 0;
-  width: 100%;
- text-align: center;
+    background-color: antiquewhite;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: white;
+    color: rgba(105, 105, 105, 0.47);
 }
-*/
+
+
+
+.overskrift {
+    margin-left: 15px;
+    color: rgba(105, 105, 105, 0.47);
+    background-color: white;
+    letter-spacing: 3px;
+    text-decoration: none;
+}
+
+.overskrift h2 {}
+
 /*---------------------------------------------------------GENERALT SLUT----------------------------------------------*/
 
 
@@ -101,12 +124,12 @@ nav {
     justify-content: space-around;
     align-items: center;
     min-height: 8vh;
-    background-color: #5d4954;
+    background-color: rgb(106, 85, 97);
 }
 
 .logo {
+
     color: rgba(240, 248, 255, 0.64);
-    text-transform: uppercase;
     letter-spacing: 5px;
     font-size: 20px;
 }
@@ -121,6 +144,9 @@ nav {
     color: rgba(240, 248, 255, 0.64);
     text-decoration: none;
     letter-spacing: 3px;
+    font-family: 'century_gothicregular';
+    font-weight: bold;
+
 
 }
 
@@ -160,7 +186,7 @@ nav {
         right: 0px;
         height: 92vh;
         top: 8vh;
-        background-color: #5d4954;
+        background-color: rgb(106, 85, 97);
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -302,13 +328,14 @@ section {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-
+    margin-top: 100px;
 }
 
 #sectionwrapperportfolio .frontbillede {
     flex-grow: 1;
     /*    Flex basis var 300 px før sammen med billedet*/
     flex-basis: 100px;
+
     /*
     background-color: fuchsia;
     background-image: url(billeder/portfoliobillede3.png);
@@ -346,11 +373,10 @@ section {
     flex-grow: 1;
     flex-basis: 50px;
     background-color: white;
-
     flex-direction: column;
     overflow: hidden;
     border-style: solid;
-    border-color: rgba(216, 212, 211, 0.33);
+    border-color: rgba(106, 85, 97, 0.1);
 }
 
 #sectionwrapperportfolio .flexitembillede {
@@ -402,6 +428,7 @@ section {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 0%;
+
 }
 
 #sectionwrapperportfolio .billede5 {
@@ -423,35 +450,35 @@ section {
 }
 
 #sectionwrapperportfolio .item1 {
-    margin: 5px 5px 0px 5px;
+    margin: 15px 15px 0px 15px;
 }
 
 #sectionwrapperportfolio .item2 {
-    margin: 5px 5px 0px 0px;
+    margin: 15px 15px 0px 0px;
 }
 
 #sectionwrapperportfolio .item3 {
-    margin: 5px 5px 0px 0px;
+    margin: 15px 15px 0px 0px;
 }
 
 #sectionwrapperportfolio .item4 {
-    margin: 5px 5px 0px 0px;
+    margin: 15px 15px 0px 0px;
 }
 
 #sectionwrapperportfolio .item5 {
-    margin: 5px 5px 5px 5px;
+    margin: 15px 15px 15px 15px;
 }
 
 #sectionwrapperportfolio .item6 {
-    margin: 5px 5px 5px 0px;
+    margin: 15px 15px 15px 0px;
 }
 
 #sectionwrapperportfolio .item7 {
-    margin: 5px 5px 5px 0px;
+    margin: 15px 15px 15px 0px;
 }
 
 #sectionwrapperportfolio .item8 {
-    margin: 5px 5px 5px 0px;
+    margin: 15px 15px 15px 0px;
 }
 
 /*
@@ -468,6 +495,7 @@ section {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    margin-top: 100px;
 }
 
 #sectionwrappercv .flexbund {
@@ -514,6 +542,7 @@ section {
     flex-wrap: wrap;
     background-color: aliceblue;
     flex-direction: column;
+    margin-top: 100px;
 }
 
 #sectionwrapperstilart .flexwrapperbund {
@@ -596,6 +625,7 @@ section {
     flex-wrap: wrap;
     background-color: aliceblue;
     flex-direction: column;
+    margin-top: 100px;
 }
 
 #sectionwrapperanimation .flexwrapperbund {
@@ -678,6 +708,7 @@ section {
     flex-wrap: wrap;
     background-color: aliceblue;
     flex-direction: column;
+    margin-top: 100px;
 }
 
 #sectionwrapperprivatsnak .flexwrapperbund {
@@ -754,3 +785,341 @@ section {
 }
 
 /*---------------------------------------------------------Privat snak SIDE Slut----------------------------------------------*/
+/*---------------------------------------------------------Pilotprojekt SIDE ----------------------------------------------*/
+#sectionwrapperpilotprojekt {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: aliceblue;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+#sectionwrapperpilotprojekt .flexwrapperbund {
+    background-color: fuchsia;
+    flex-grow: 1;
+    flex-basis: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+#sectionwrapperpilotprojekt .flexleft {
+    flex-grow: 1;
+    flex-basis: 400px;
+    background-color: white;
+    padding: 10px;
+
+}
+
+#sectionwrapperpilotprojekt .flexright {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    flex-basis: 400px;
+    background-color: white;
+    flex-direction: column;
+
+}
+
+#sectionwrapperpilotprojekt .flexitemtop {
+    flex-grow: 1;
+    flex-basis: 320px;
+    background-color: bisque;
+    margin: 20px 20px 0 20px;
+}
+
+#sectionwrapperpilotprojekt .flexitemmid {
+
+    flex-grow: 1;
+    flex-basis: 320px;
+    background-color: darkslategray;
+    margin: 20px 20px 20px 20px;
+}
+
+#sectionwrapperpilotprojekt .flexitembot {
+
+    flex-grow: 1;
+    flex-basis: 320px;
+    background-color: darkslategray;
+    margin: 0 20px 20px 20px;
+}
+
+#sectionwrapperpilotprojekt .billede1 {
+    background-image: url(billeder/pilot1.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: white;
+
+}
+
+#sectionwrapperpilotprojekt .billede2 {
+    background-image: url(billeder/pilot2.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: white;
+}
+
+#sectionwrapperpilotprojekt .billede3 {
+    background-image: url(billeder/pilot3.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: white;
+    background-position: center;
+}
+
+/*---------------------------------------------------------Pilotprojekt SIDE Slut----------------------------------------------*/
+/*---------------------------------------------------------Redesign SIDE ----------------------------------------------*/
+#sectionwrapperredesign {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: aliceblue;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+#sectionwrapperredesign .flexwrapperbund {
+    background-color: fuchsia;
+    flex-grow: 1;
+    flex-basis: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+#sectionwrapperredesign .flexleft {
+    flex-grow: 1;
+    flex-basis: 400px;
+    background-color: white;
+    padding: 10px;
+
+}
+
+#sectionwrapperredesign .flexright {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    flex-basis: 400px;
+    background-color: white;
+    flex-direction: column;
+
+}
+
+#sectionwrapperredesign .flexitemtop {
+    flex-grow: 1;
+    flex-basis: 320px;
+    background-color: bisque;
+    margin: 20px 20px 0 20px;
+}
+
+#sectionwrapperredesign .flexitemmid {
+
+    flex-grow: 1;
+    flex-basis: 320px;
+    background-color: darkslategray;
+    margin: 20px 20px 20px 20px;
+}
+
+#sectionwrapperredesign .flexitembot {
+
+    flex-grow: 1;
+    flex-basis: 320px;
+    background-color: darkslategray;
+    margin: 0 20px 20px 20px;
+}
+
+#sectionwrapperredesign .billede1 {
+    background-image: url(billeder/redesign1.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: white;
+
+}
+
+#sectionwrapperredesign .billede2 {
+    background-image: url(billeder/redesign8.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: white;
+
+}
+
+#sectionwrapperredesign .billede3 {
+    background-image: url(billeder/redesign9.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: white;
+    background-position: 0% 78%;
+}
+
+/*---------------------------------------------------------Redesign SIDE Slut----------------------------------------------*/
+/*---------------------------------------------------------Prototype SIDE ----------------------------------------------*/
+#sectionwrapperprototype {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: aliceblue;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+#sectionwrapperprototype .flexwrapperbund {
+    background-color: fuchsia;
+    flex-grow: 1;
+    flex-basis: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+#sectionwrapperprototype .flexleft {
+    flex-grow: 1;
+    flex-basis: 400px;
+    background-color: white;
+    padding: 10px;
+
+}
+
+#sectionwrapperprototype .flexright {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    flex-basis: 400px;
+    background-color: white;
+    flex-direction: column;
+
+}
+
+#sectionwrapperprototype .flexitemtop {
+    flex-grow: 1;
+    flex-basis: 320px;
+    background-color: bisque;
+    margin: 20px 20px 0 20px;
+}
+
+#sectionwrapperprototype .flexitemmid {
+
+    flex-grow: 1;
+    flex-basis: 320px;
+    background-color: darkslategray;
+    margin: 20px 20px 20px 20px;
+}
+
+#sectionwrapperprototype .flexitembot {
+
+    flex-grow: 1;
+    flex-basis: 320px;
+    background-color: darkslategray;
+    margin: 0 20px 20px 20px;
+}
+
+#sectionwrapperprototype .billede1 {
+    background-image: url(billeder/prototype4.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: white;
+
+}
+
+#sectionwrapperprototype .billede2 {
+    background-image: url(billeder/prototype45png.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: white;
+
+}
+
+#sectionwrapperprototype .billede3 {
+    background-image: url(billeder/prototype1.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: white;
+    background-position: 0% 78%;
+}
+
+/*---------------------------------------------------------Prototype SIDE Slut----------------------------------------------*/
+/*---------------------------------------------------------Prototypenative SIDE ----------------------------------------------*/
+#sectionwrapperprototypenative {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: aliceblue;
+    flex-direction: column;
+    margin-top: 100px;
+
+}
+
+#sectionwrapperprototypenative .flexwrapperbund {
+    background-color: fuchsia;
+    flex-grow: 1;
+    flex-basis: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+#sectionwrapperprototypenative .flexleft {
+    flex-grow: 1;
+    flex-basis: 400px;
+    background-color: white;
+    padding: 10px;
+
+}
+
+#sectionwrapperprototypenative .flexright {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    flex-basis: 400px;
+    background-color: white;
+    flex-direction: column;
+}
+
+#sectionwrapperprototypenative .flexitemtop {
+    flex-grow: 1;
+    flex-basis: 320px;
+    background-color: bisque;
+    margin: 20px 20px 0 20px;
+}
+
+#sectionwrapperprototypenative .flexitemmid {
+
+    flex-grow: 1;
+    flex-basis: 320px;
+    background-color: darkslategray;
+    margin: 20px 20px 20px 20px;
+}
+
+#sectionwrapperprototypenative .flexitembot {
+    flex-grow: 1;
+    flex-basis: 320px;
+    background-color: darkslategray;
+    margin: 0 20px 20px 20px;
+}
+
+#sectionwrapperprototypenative .billede1 {
+    background-image: url(billeder/sprint1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: white;
+}
+
+#sectionwrapperprototypenative .billede2 {
+    background-image: url(billeder/sprint2.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: white;
+}
+
+#sectionwrapperprototypenative .billede3 {
+    background-image: url(billeder/sprint3.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: white;
+}
+
+#sectionwrapperprototypenative .billede4 {
+    background-image: url(billeder/kealive.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: white;
+}
+
+/*---------------------------------------------------------Prototypenative SIDE Slut----------------------------------------------*/
