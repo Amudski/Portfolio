@@ -411,7 +411,6 @@ flex: auto;
 #sectionwrapperportfolio .flexitembillede {
     flex-grow: 1;
     flex-basis: 200px;
-    background-color: wheat;
     opacity: 0.8;
     cursor: pointer;
 
@@ -508,6 +507,12 @@ flex: auto;
 
 #sectionwrapperportfolio .item8 {
     margin: 15px 15px 15px 0px;
+    border-style: none;
+
+}
+
+#sectionwrapperportfolio .billede8 {
+    cursor: auto;
 }
 
 @media only screen and (max-width: 1130px) {
@@ -605,7 +610,7 @@ flex: auto;
     }
 
     #sectionwrapperportfolio .item8 {
-        margin: 15px 15px 15px 15px;
+        display: none;
     }
 }
 
