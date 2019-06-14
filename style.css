@@ -138,6 +138,7 @@ nav {
     display: flex;
     justify-content: space-around;
     width: 30%;
+    z-index: 10;
 }
 
 .nav-links a {
@@ -284,7 +285,7 @@ section {
 #sectionwrapper .flexleft {
     background-color: white;
     flex-grow: 1;
-    flex-basis: 100px;
+    flex-basis: 150px;
     display: inline-block;
     padding: 15px;
 }
@@ -292,7 +293,7 @@ section {
 #sectionwrapper .flexright {
     background-color: white;
     flex-grow: 1;
-    flex-basis: 100px;
+    flex-basis: 250px;
     /*    padding: 15px;*/
 }
 
@@ -305,6 +306,23 @@ section {
     margin-top: 40px;
     margin-bottom: 40px;
 
+}
+
+@media screen and (max-width: 1000px) {
+
+    #sectionwrapper .flexright img {
+
+        margin-top: 40px;
+        margin-bottom: 20px;
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 780px) {
+
+    #sectionwrapper .flexleft {
+        flex-basis: 350px;
+    }
 }
 
 /*---------------------------------------------------------FORSIDE SLUT----------------------------------------------*/
@@ -348,6 +366,7 @@ section {
 
 #sectionwrapperportfolio .frontbillede img {}
 
+/*
 #sectionwrapperportfolio .flexbund {
     display: flex;
     flex-wrap: wrap;
@@ -356,32 +375,42 @@ section {
     background-color: white;
     flex-direction: column;
 }
+*/
 
 #sectionwrapperportfolio .flexbundrow {
     display: flex;
     flex-wrap: wrap;
     flex-grow: 1;
-    flex-basis: 250px;
+    flex-basis: 800px;
     background-color: white;
     flex-direction: row;
+    /*    margin: 20px;*/
 }
 
+/*
+#sectionwrapperportfolio .flexbundrow::after {
+content: '';
+flex: auto;
+}
+*/
 
 #sectionwrapperportfolio .flexitem {
     display: flex;
     flex-wrap: wrap;
     flex-grow: 1;
-    flex-basis: 50px;
+    flex-basis: 250px;
     background-color: white;
     flex-direction: column;
     overflow: hidden;
     border-style: solid;
     border-color: rgba(106, 85, 97, 0.1);
+
+
 }
 
 #sectionwrapperportfolio .flexitembillede {
     flex-grow: 1;
-    flex-basis: 35px;
+    flex-basis: 200px;
     background-color: wheat;
     opacity: 0.8;
     cursor: pointer;
@@ -390,7 +419,7 @@ section {
 
 #sectionwrapperportfolio .flexitemtekst {
     flex-grow: 1;
-    flex-basis: 15px;
+    flex-basis: 230px;
     background-color: white;
     margin: 2px;
     color: black;
@@ -402,7 +431,7 @@ section {
 }
 
 #sectionwrapperportfolio .billede1 {
-    background-image: url(billeder/splashbillede.jpg);
+    background-image: url(billeder/stilart.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -481,15 +510,174 @@ section {
     margin: 15px 15px 15px 0px;
 }
 
+@media only screen and (max-width: 1130px) {
+
+
+    #sectionwrapperportfolio .flexitembillede {
+        flex-basis: 150px;
+    }
+
+    #sectionwrapperportfolio .flexitem {
+        flex-basis: 210px;
+    }
+
+    #sectionwrapperportfolio .flexitemtekst {
+        flex-basis: 280px;
+    }
+}
+
+
+@media only screen and (max-width: 935px) {
+    #sectionwrapperportfolio .flexbundrow {
+        flex-basis: 900px;
+    }
+
+    #sectionwrapperportfolio .flexitem {
+        flex-basis: 300px;
+    }
+
+    #sectionwrapperportfolio .flexitembillede {
+        flex-basis: 200px;
+    }
+
+    #sectionwrapperportfolio .item3 {
+        margin: 15px 15px 0px 15px;
+    }
+
+    #sectionwrapperportfolio .item7 {
+        margin: 0px 15px 0px 15px;
+    }
+
+    #sectionwrapperportfolio .item8 {
+        margin: 0px 15px 0px 0px;
+    }
+
+    #sectionwrapperportfolio .flexitemtekst {
+        flex-basis: 180px;
+    }
+}
+
+@media only screen and (max-width: 662px) {
+    #sectionwrapperportfolio .flexitem {
+        flex-basis: 230px;
+    }
+
+    #sectionwrapperportfolio .flexitembillede {
+        flex-basis: 180px;
+    }
+
+    #sectionwrapperportfolio .flexitemtekst {
+        flex-basis: 250px;
+    }
+}
+
+@media only screen and (max-width: 551px) {
+    #sectionwrapperportfolio .flexitem {
+        flex-basis: 250px;
+    }
+
+    #sectionwrapperportfolio .flexitembillede {
+        flex-basis: 250px;
+    }
+
+    #sectionwrapperportfolio .flexitemtekst {
+        flex-basis: 180px;
+    }
+
+    #sectionwrapperportfolio .item2 {
+        margin: 15px 15px 0px 15px;
+    }
+
+    #sectionwrapperportfolio .item4 {
+        margin: 15px 15px 0px 15px;
+    }
+
+    #sectionwrapperportfolio .item5 {
+        margin: 15px 15px 0px 15px;
+    }
+
+    #sectionwrapperportfolio .item6 {
+        margin: 15px 15px 0px 15px;
+    }
+
+    #sectionwrapperportfolio .item7 {
+        margin: 15px 15px 0px 15px;
+    }
+
+    #sectionwrapperportfolio .item8 {
+        margin: 15px 15px 15px 15px;
+    }
+}
+
+@media only screen and (max-width: 390px) {
+    #sectionwrapperportfolio .flexitembillede {
+        flex-basis: 180px;
+    }
+
+    #sectionwrapperportfolio .flexitemtekst {
+        flex-basis: 240px;
+    }
+}
+
+@media only screen and (max-width: 290px) {
+    #sectionwrapperportfolio .flexitembillede {
+        flex-basis: 130px;
+    }
+
+    #sectionwrapperportfolio .flexitemtekst {
+        flex-basis: 250px;
+    }
+
+    #sectionwrapperportfolio .flexitem {
+        margin: 5px;
+
+    }
+}
+
 /*
-#sectionwrapperportfolio .billede8 {
-    background-image: url(billeder/splashbillede.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+@media only screen and (max-width: 617px) and (min-width: 290px) {
+
+    #sectionwrapperportfolio .flexitembillede {
+        flex-basis: 300px;
+    }
+    #sectionwrapperportfolio .flexitem {
+        flex-basis: 250px;
+        margin: 10px;
+    }
+
+}
+
+@media only screen and (max-width: 290px) and (min-width: 240px) {
+
+
+    #sectionwrapperportfolio .flexitem {
+        flex-basis: 500px;
+
+    }
+
+    #sectionwrapperportfolio .flexbundrow {
+        flex-basis: 4000px;
+    }
+
+    #sectionwrapperportfolio .flexitembillede {
+        flex-basis: 200px;
+    }
+}
+
+@media only screen and (max-width: 240px) and (min-width: 0px) {
+    #sectionwrapperportfolio .flexitem {
+        flex-basis: 5000px;
+    }
+   #sectionwrapperportfolio .flexbundrow {
+        flex-basis: 4500px;
+    }
+
+    #sectionwrapperportfolio .flexitembillede {
+        flex-basis: 100px;
+    }
 }
 */
-
-/*---------------------------------------------------------PORTFOLIO SLUT----------------------------------------------*/
+/*---------------------------------------------------------PORTFOLIO SLUT----------------------------------------------
 /*---------------------------------------------------------MIG SIDE----------------------------------------------*/
 #sectionwrappercv {
     display: flex;
@@ -520,7 +708,7 @@ section {
 #sectionwrappercv .flexright {
     background-color: white;
     flex-grow: 1;
-    flex-basis: 100px;
+    flex-basis: 150px;
     /*    padding: 15px;*/
 }
 
@@ -529,10 +717,21 @@ section {
     margin-left: auto;
     margin-right: auto;
     width: 80%;
-    /*    border-style:solid;*/
     margin-top: 40px;
     margin-bottom: 40px;
 
+}
+
+@media screen and (max-width: 720px) {
+    #sectionwrappercv .flexleft {
+        flex-basis: 200px;
+    }
+}
+
+@media screen and (max-width: 630px) {
+    #sectionwrappercv .flexbund {
+        flex-direction: column;
+    }
 }
 
 /*---------------------------------------------------------MIG SIDE SLUT----------------------------------------------*/
@@ -620,11 +819,13 @@ section {
 }
 
 @media screen and (max-width: 1000px) {
+    /*
     section {
         max-width: 800px;
         margin: 20px;
 
     }
+*/
 
     #sectionwrapperstilart .flexwrapperbund {
         flex-direction: column;
@@ -746,6 +947,7 @@ section {
         margin: 5px;
     }
 }
+
 @media only screen and (max-width: 280px) and (min-width: 0px) {
     section {
         max-width: 800px;
