@@ -81,6 +81,7 @@ h3 {
     font-family: 'century_gothicregular';
     font-weight: bold;
     font-size: 1.5em;
+
 }
 
 h4 {
@@ -118,7 +119,7 @@ footer {
 /*---------------------------------------------------------GENERALT SLUT----------------------------------------------*/
 
 
-/* ----------------------BURGER MENU ------------------------------ */
+/*---------------------------------------------------------BURGER MENU----------------------------------------------*/
 nav {
     display: flex;
     justify-content: space-around;
@@ -235,9 +236,9 @@ nav {
     transform: rotate(45deg)translate(-5px, -6px);
 }
 
-/* ----------------------BURGER MENU SLUT--------------------------- */
+/*---------------------------------------------------------BURGER MENU SLUT---------------------------------------------------------*/
 
-/*---------------------------------------------------------FORSIDE----------------------------------------------*/
+/*---------------------------------------------------------FORSIDE---------------------------------------------------------*/
 header {
     background-color: blue;
 }
@@ -325,8 +326,8 @@ section {
     }
 }
 
-/*---------------------------------------------------------FORSIDE SLUT----------------------------------------------*/
-/*---------------------------------------------------------PORTFOLIO----------------------------------------------*/
+/*---------------------------------------------------------FORSIDE SLUT---------------------------------------------------------*/
+/*---------------------------------------------------------PORTFOLIO---------------------------------------------------------*/
 
 
 
@@ -682,8 +683,8 @@ flex: auto;
     }
 }
 */
-/*---------------------------------------------------------PORTFOLIO SLUT----------------------------------------------
-/*---------------------------------------------------------MIG SIDE----------------------------------------------*/
+/*---------------------------------------------------------PORTFOLIO SLUT---------------------------------------------------------*/
+/*---------------------------------------------------------MIG SIDE---------------------------------------------------------*/
 #sectionwrappercv {
     display: flex;
     flex-wrap: wrap;
@@ -739,8 +740,8 @@ flex: auto;
     }
 }
 
-/*---------------------------------------------------------MIG SIDE SLUT----------------------------------------------*/
-/*---------------------------------------------------------Stilart SIDE----------------------------------------------*/
+/*---------------------------------------------------------MIG SIDE SLUT---------------------------------------------------------*/
+/*---------------------------------------------------------Stilart SIDE---------------------------------------------------------*/
 #sectionwrapperstilart {
     display: flex;
     flex-wrap: wrap;
@@ -751,7 +752,7 @@ flex: auto;
 }
 
 #sectionwrapperstilart .flexwrapperbund {
-    background-color: fuchsia;
+    background-color: white;
     flex-grow: 1;
     flex-basis: 800px;
     display: flex;
@@ -780,24 +781,21 @@ flex: auto;
 
 #sectionwrapperstilart .flexitemtop {
     flex-grow: 1;
-    flex-basis: 200px;
+    flex-basis: 300px;
     background-color: bisque;
-    margin: 20px 20px 0 20px;
+    margin: 30px 20px 0 20px;
 }
 
 #sectionwrapperstilart .flexitemmid {
-
     flex-grow: 1;
-    flex-basis: 200px;
+    flex-basis: 300px;
     background-color: darkslategray;
     margin: 20px 20px 20px 20px;
-
 }
 
 #sectionwrapperstilart .flexitembot {
-
     flex-grow: 1;
-    flex-basis: 200px;
+    flex-basis: 300px;
     background-color: darkslategray;
     margin: 0 20px 20px 20px;
 }
@@ -823,14 +821,12 @@ flex: auto;
     background-color: white;
 }
 
-@media screen and (max-width: 1000px) {
-    /*
+
+/*---------------------------------------------------------STIL ART MEDIA QUERY BACKUP---------------------------------------------------------*/
+@media only screen and (max-width: 817px) and (min-width: 570px) {
     section {
         max-width: 800px;
-        margin: 20px;
-
     }
-*/
 
     #sectionwrapperstilart .flexwrapperbund {
         flex-direction: column;
@@ -843,38 +839,15 @@ flex: auto;
 
     #sectionwrapperstilart .flexitemmid {
         flex-basis: 350px;
+
     }
 
     #sectionwrapperstilart .flexitembot {
         flex-basis: 350px;
-    }
-}
-
-
-@media only screen and (max-width: 730px) and (min-width: 570px) {
-    section {
-        max-width: 800px;
-    }
-
-    #sectionwrapperstilart .flexwrapperbund {
-        flex-direction: column;
-    }
-
-    #sectionwrapperstilart .flexitemtop {
-        flex-basis: 300px;
-
-    }
-
-    #sectionwrapperstilart .flexitemmid {
-        flex-basis: 300px;
-
-    }
-
-    #sectionwrapperstilart .flexitembot {
-        flex-basis: 300px;
 
     }
 }
+
 
 @media screen and (max-width: 570px) {
     section {
@@ -889,17 +862,18 @@ flex: auto;
 
     #sectionwrapperstilart .flexitemtop {
         flex-basis: 270px;
-        margin: 0;
+        margin: 0px 5px 0 5px;
     }
 
     #sectionwrapperstilart .flexitemmid {
         flex-basis: 270px;
-        margin: 0;
+        margin: 0px 5px 0 5px;
+
     }
 
     #sectionwrapperstilart .flexitembot {
         flex-basis: 270px;
-        margin: 0;
+        margin: 0px 5px 0 5px;
     }
 }
 
@@ -914,17 +888,17 @@ flex: auto;
 
     #sectionwrapperstilart .flexitemtop {
         flex-basis: 200px;
-        margin: 0;
+        margin: 5px;
     }
 
     #sectionwrapperstilart .flexitemmid {
         flex-basis: 200px;
-        margin: 0;
+        margin: 5px;
     }
 
     #sectionwrapperstilart .flexitembot {
         flex-basis: 200px;
-        margin: 0;
+        margin: 5px;
     }
 }
 
@@ -938,25 +912,25 @@ flex: auto;
     }
 
     #sectionwrapperstilart .flexitemtop {
-        flex-basis: 100px;
+        flex-basis: 150px;
         margin: 5px;
     }
 
     #sectionwrapperstilart .flexitemmid {
-        flex-basis: 100px;
+        flex-basis: 150px;
         margin: 5px;
     }
 
     #sectionwrapperstilart .flexitembot {
-        flex-basis: 100px;
+        flex-basis: 150px;
         margin: 5px;
     }
 }
 
 @media only screen and (max-width: 280px) and (min-width: 0px) {
-    section {
-        max-width: 800px;
-        margin: 0;
+    p3 {
+        font-size: 1.2em;
+        line-height: 1.4em;
     }
 
     #sectionwrapperstilart .flexwrapperbund {
@@ -979,6 +953,7 @@ flex: auto;
     }
 }
 
+/*------------------------------------STIL ART MEDIA QUERY BACKUP---------------------*/
 /*---------------------------------------------------------Stilart SIDE Slut----------------------------------------------*/
 /*---------------------------------------------------------Animation SIDE ----------------------------------------------*/
 #sectionwrapperanimation {
@@ -990,12 +965,13 @@ flex: auto;
 }
 
 #sectionwrapperanimation .flexwrapperbund {
-    background-color: fuchsia;
+    background-color: white;
     flex-grow: 1;
     flex-basis: 1000px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+
 }
 
 #sectionwrapperanimation .flexleft {
@@ -1013,7 +989,7 @@ flex: auto;
     flex-basis: 400px;
     background-color: white;
     flex-direction: column;
-
+    margin-top: 15px;
 }
 
 #sectionwrapperanimation .flexitemtop {
@@ -1062,6 +1038,82 @@ flex: auto;
     background-position: center;
 }
 
+/*
+@media screen and (max-width: 440px) {
+    section {
+        max-width: 800px;
+    }
+
+    #sectionwrapperanimation .flexwrapperbund {
+        flex-direction: column;
+    }
+
+    #sectionwrapperanimation .flexitemtop {
+        flex-basis: 200px;
+        margin: 5px;
+    }
+
+    #sectionwrapperanimation .flexitemmid {
+        flex-basis: 200px;
+        margin: 5px;
+    }
+
+    #sectionwrapperanimation .flexitembot {
+        flex-basis: 200px;
+        margin: 5px;
+    }
+}
+
+@media only screen and (max-width: 350px) and (min-width: 280px) {
+    section {
+        max-width: 800px;
+    }
+
+    #sectionwrapperanimation .flexwrapperbund {
+        flex-direction: column;
+    }
+
+    #sectionwrapperanimation .flexitemtop {
+        flex-basis: 150px;
+        margin: 5px;
+    }
+
+    #sectionwrapperanimation .flexitemmid {
+        flex-basis: 150px;
+        margin: 5px;
+    }
+
+    #sectionwrapperanimation .flexitembot {
+        flex-basis: 150px;
+        margin: 5px;
+    }
+}
+@media only screen and (max-width: 280px) and (min-width: 0px) {
+    p3 {
+    font-size: 1.2em;
+    line-height: 1.4em;
+}
+
+    #sectionwrapperanimation .flexwrapperbund {
+        flex-direction: column;
+    }
+
+    #sectionwrapperanimation .flexitemtop {
+        flex-basis: 120px;
+
+    }
+
+    #sectionwrapperanimation .flexitemmid {
+        flex-basis: 120px;
+
+    }
+
+    #sectionwrapperanimation .flexitembot {
+        flex-basis: 120px;
+
+    }
+}
+*/
 /*---------------------------------------------------------Animation SIDE Slut----------------------------------------------*/
 /*---------------------------------------------------------Privat snak SIDE ----------------------------------------------*/
 #sectionwrapperprivatsnak {
@@ -1455,6 +1507,14 @@ flex: auto;
     margin: 0 20px 20px 20px;
 }
 
+#sectionwrapperprototypenative .flexitemultrabot {
+    flex-grow: 1;
+    flex-basis: 320px;
+    background-color: darkslategray;
+    margin: 0 20px 20px 20px;
+}
+
+
 #sectionwrapperprototypenative .billede1 {
     background-image: url(billeder/sprint1.jpg);
     background-repeat: no-repeat;
@@ -1484,3 +1544,201 @@ flex: auto;
 }
 
 /*---------------------------------------------------------Prototypenative SIDE Slut----------------------------------------------*/
+/*------------------------------------MEDIA QUERY TIL PORTFOLIO SIDERNE------------------------------------*/
+@media only screen and (max-width: 817px) and (min-width: 570px) {
+
+
+    #sectionwrapperstilart .flexitemtop,
+    #sectionwrapperanimation .flexitemtop,
+    #sectionwrapperprivatsnak .flexitemtop,
+    #sectionwrapperpilotprojekt .flexitemtop,
+    #sectionwrapperprototype .flexitemtop,
+    #sectionwrapperprototypenative .flexitemtop {
+        flex-basis: 350px;
+
+    }
+
+    #sectionwrapperstilart .flexitemmid,
+    #sectionwrapperanimation .flexitemmid,
+    #sectionwrapperprivatsnak .flexitemmid,
+    #sectionwrapperpilotprojekt .flexitemmid,
+    #sectionwrapperredesign .flexitemmid,
+    #sectionwrapperprototype .flexitemmid,
+    #sectionwrapperprototypenative .flexitemmid {
+        flex-basis: 350px;
+
+    }
+
+    #sectionwrapperstilart .flexitembot,
+    #sectionwrapperanimation .flexitembot,
+    #sectionwrapperprivatsnak .flexitembot,
+    #sectionwrapperpilotprojekt .flexitembot,
+    #sectionwrapperredesign .flexitembot,
+    #sectionwrapperprototype .flexitembot,
+    sectionwrapperprototypenative .flexitembot {
+        flex-basis: 350px;
+
+    }
+}
+
+
+@media screen and (max-width: 570px) {
+
+
+    #sectionwrapperstilart .flexitemtop,
+    #sectionwrapperanimation .flexitemtop,
+    #sectionwrapperprivatsnak .flexitemtop,
+    #sectionwrapperpilotprojekt .flexitemtop,
+    #sectionwrapperredesign .flexitemtop,
+    #sectionwrapperprototype .flexitemtop,
+    #sectionwrapperprototypenative .flexitemtop {
+        flex-basis: 270px;
+        margin: 5px 5px 5px 5px;
+    }
+
+    #sectionwrapperstilart .flexitemmid,
+    #sectionwrapperanimation .flexitemmid,
+    #sectionwrapperprivatsnak .flexitemmid,
+    #sectionwrapperpilotprojekt .flexitemmid,
+    #sectionwrapperredesign .flexitemmid,
+    #sectionwrapperprototype .flexitemmid,
+    #sectionwrapperprototypenative .flexitemmid {
+        flex-basis: 270px;
+        margin: 5px 5px 5px 5px;
+
+    }
+
+    #sectionwrapperstilart .flexitembot,
+    #sectionwrapperanimation .flexitembot,
+    #sectionwrapperprivatsnak .flexitembot,
+    #sectionwrapperpilotprojekt .flexitembot,
+    #sectionwrapperredesign .flexitembot,
+    #sectionwrapperprototype .flexitembot,
+    sectionwrapperprototypenative .flexitembot {
+        flex-basis: 270px;
+        margin: 5px 5px 5px 5px;
+    }
+}
+
+@media screen and (max-width: 440px) {
+
+    #sectionwrapperstilart .flexitemtop,
+    #sectionwrapperanimation .flexitemtop,
+    #sectionwrapperprivatsnak .flexitemtop,
+    #sectionwrapperpilotprojekt .flexitemtop,
+    #sectionwrapperredesign .flexitemtop,
+    #sectionwrapperprototype .flexitemtop,
+    #sectionwrapperprototypenative .flexitemtop,
+    #sectionwrapperprototypenative .flexitemultratop {
+        flex-basis: 200px;
+        margin: 5px;
+    }
+
+    #sectionwrapperstilart .flexitemmid,
+    #sectionwrapperanimation .flexitemmid,
+    #sectionwrapperprivatsnak .flexitemmid,
+    #sectionwrapperpilotprojekt .flexitemmid,
+    #sectionwrapperredesign .flexitemmid,
+    #sectionwrapperprototype .flexitemmid,
+    #sectionwrapperprototypenative .flexitemmid,
+    #sectionwrapperprototypenative .flexitemultramid {
+        flex-basis: 200px;
+        margin: 5px;
+    }
+
+    #sectionwrapperstilart .flexitembot,
+    #sectionwrapperanimation .flexitembot,
+    #sectionwrapperprivatsnak .flexitembot,
+    #sectionwrapperpilotprojekt .flexitembot,
+    #sectionwrapperredesign .flexitembot,
+    #sectionwrapperprototype .flexitembot,
+    #sectionwrapperprototypenative .flexitembot,
+    #sectionwrapperprototypenative .flexitemultrabot {
+        flex-basis: 200px;
+        margin: 5px;
+    }
+}
+
+@media only screen and (max-width: 350px) and (min-width: 280px) {
+
+    #sectionwrapperstilart .flexitemtop,
+    #sectionwrapperanimation .flexitemtop,
+    #sectionwrapperprivatsnak .flexitemtop,
+    #sectionwrapperpilotprojekt .flexitemtop,
+    #sectionwrapperredesign .flexitemtop,
+    #sectionwrapperprototype .flexitemtop,
+    #sectionwrapperprototypenative .flexitemtop,
+    #sectionwrapperprototypenative .flexitemultratop {
+        flex-basis: 150px;
+        margin: 5px;
+    }
+
+    #sectionwrapperstilart .flexitemmid,
+    #sectionwrapperanimation .flexitemmid,
+    #sectionwrapperprivatsnak .flexitemmid,
+    #sectionwrapperpilotprojekt .flexitemmid,
+    #sectionwrapperredesign .flexitemmid,
+    #sectionwrapperprototype .flexitemmid,
+    #sectionwrapperprototypenative .flexitemmid,
+    #sectionwrapperprototypenative .flexitemultramid {
+        flex-basis: 150px;
+        margin: 5px;
+    }
+
+    #sectionwrapperstilart .flexitembot,
+    #sectionwrapperanimation .flexitembot,
+    #sectionwrapperprivatsnak .flexitembot,
+    #sectionwrapperpilotprojekt .flexitembot,
+    #sectionwrapperredesign .flexitembot,
+    #sectionwrapperprototype .flexitembot,
+    #sectionwrapperprototypenative .flexitembot,
+    #sectionwrapperprototypenative .flexitemultrabot {
+        flex-basis: 150px;
+        margin: 5px;
+    }
+}
+
+@media only screen and (max-width: 280px) and (min-width: 0px) {
+    p3 {
+        font-size: 1.2em;
+        line-height: 1.4em;
+    }
+
+    #sectionwrapperstilart .flexitemtop,
+    #sectionwrapperanimation .flexitemtop,
+    #sectionwrapperprivatsnak .flexitemtop,
+    #sectionwrapperpilotprojekt .flexitemtop,
+    #sectionwrapperredesign .flexitemtop,
+    #sectionwrapperprototype .flexitemtop,
+    #sectionwrapperprototypenative .flexitemtop,
+    #sectionwrapperprototypenative .flexitemultratop {
+        flex-basis: 120px;
+
+    }
+
+    #sectionwrapperstilart .flexitemmid,
+    #sectionwrapperanimation .flexitemmid,
+    #sectionwrapperprivatsnak .flexitemmid,
+    #sectionwrapperpilotprojekt .flexitemmid,
+    #sectionwrapperredesign .flexitemmid,
+    #sectionwrapperprototype .flexitemmid,
+    #sectionwrapperprototypenative .flexitemmid,
+    #sectionwrapperprototypenative .flexitemultramid {
+        flex-basis: 120px;
+
+    }
+
+    #sectionwrapperstilart .flexitembot,
+    #sectionwrapperanimation .flexitembot,
+    #sectionwrapperprivatsnak .flexitembot,
+    #sectionwrapperpilotprojekt .flexitembot,
+    #sectionwrapperredesign .flexitembot,
+    #sectionwrapperprototype .flexitembot,
+    #sectionwrapperprototypenative .flexitembot,
+    #sectionwrapperprototypenative .flexitemultrabot {
+        flex-basis: 120px;
+
+    }
+}
+
+/*------------------------------------MEDIA QUERY TIL PORTFOLIO SIDERNE------------------------------------*/
