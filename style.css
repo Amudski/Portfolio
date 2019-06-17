@@ -269,7 +269,7 @@ section {
 }
 
 .frontbillede {}
-
+.frontbillede img {}
 
 #sectionwrapper .flexbund {
     display: flex;
@@ -336,15 +336,6 @@ section {
 
 #sectionwrapperportfolio .flexitembillede:hover {
     opacity: 1;
-
-}
-
-flexitembillede .img {
-    opacity: 0.3;
-}
-
-flexitembillede .img {
-    opacity: 1;
 }
 
 #sectionwrapperportfolio {
@@ -357,6 +348,8 @@ flexitembillede .img {
 #sectionwrapperportfolio .frontbillede {
     flex-grow: 1;
     flex-basis: 100px;
+
+
 }
 
 #sectionwrapperportfolio .frontbillede img {}
