@@ -43,13 +43,13 @@ p {
 
 }
 
-p2 {
+.p2 {
     font-family: 'PT Serif', serif;
     font-size: 1.2em;
     line-height: 1.3em;
 }
 
-p3 {
+.p3 {
     font-family: 'PT Serif', serif;
     font-size: 1.3em;
     line-height: 1.3em;
